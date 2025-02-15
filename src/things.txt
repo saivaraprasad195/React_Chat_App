@@ -1,0 +1,3 @@
+1. add a button to top section inside chat component. that button should only be visible on smaller screen. onclick of that button make chat:false,chatList:true.
+2. add button on details component. onclick on smallscreen chatList:false,chat:true,details:false, on bigScreen chat:true,details:false,
+3. I should figure out a way to pass this state to chatList without propdrilling.

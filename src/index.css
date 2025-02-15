@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  width: 92vw;
+  min-width: 92vw;
   height: 92vh;
   display: flex;
   background-color: rgba(134, 138, 145, 0.25);
@@ -29,4 +29,11 @@ body {
   border-radius: 15px;
   border: 2px solid rgba(255, 255, 255, 0.608);
   box-shadow: 2px 5px 10px black;
+}
+
+.loading{
+  padding: 40px;
+  font-size: 30px;
+  border-radius:10px;
+  background-color: rgba(17, 25, 40, 0.8) ;
 }

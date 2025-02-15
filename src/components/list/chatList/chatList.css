@@ -35,8 +35,8 @@
 }
 
 .searchBar input[type="text"]{
-    padding: 0.5rem;
-    font-size: 14px;
+    padding: 0.75rem;
+    font-size: 16px;
     border: none;
     outline: none;
     color: rgb(255, 255, 255);
@@ -51,8 +51,8 @@
 }
 
 .add{
-    width: 33px;
-    height: 33px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     background-color: rgba(17,25,40,0.5);
     border-radius: 10px;
@@ -63,7 +63,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.75rem;
     cursor: pointer;
     border-bottom: 1px solid rgb(158, 156, 156);
 }
@@ -79,4 +79,9 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.chatList .item .text span{
+    font-size: 18px;
+    font-weight: 500;
 }
