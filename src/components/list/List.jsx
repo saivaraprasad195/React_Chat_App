@@ -1,6 +1,6 @@
 import "./list.css"
 import React from 'react';
-import UserInfo from './userInfo/Userinfo';
+import UserInfo from './userInfo/UserInfo';
 import ChatList from './chatList/ChatList';
 
 function List() {
