@@ -63,7 +63,6 @@ function Chat({ setVisibility }) {
   }
 
   useEffect(() => {
-    console.log(image.file);
     if (!image.file) return; // Prevent sending when no image is selected
 
     const timeoutId = setTimeout(() => {
@@ -151,9 +150,6 @@ function Chat({ setVisibility }) {
     */
   };
 
-  // when ever i choose and image to send in chat I think I'm not calling the sendMessage methods.
-  // maybe that is why the image is not uploaded or sent as message.
-  // but then id I'm not even calling the sendMessage method, how a new message is being created in database without createdAt,image,mesgInput values?
 
   return (
     <div className="chat">

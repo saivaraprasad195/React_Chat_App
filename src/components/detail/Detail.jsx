@@ -23,11 +23,13 @@ function Detail() {
     } catch (error) {}
   };
 
+  console.log(user);
+
   return (
     <div className="detail">
       <div className="user">
-        <img src={user.avatar || "./avatar.png"} alt="" />
-        <h2>{user.username}</h2>
+        <img src={user?.avatar || "./avatar.png"} alt="" />
+        <h2>{user?.username}</h2>
         <p>Lorem ipsum dolor sit amet.</p>
       </div>
       <div className="info">

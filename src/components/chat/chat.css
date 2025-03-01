@@ -23,8 +23,8 @@
 }
 
 .user img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -46,13 +46,9 @@
   font-size: 14px;
 }
 
-.top .icons {
-  display: flex;
-  gap: 20px;
-}
-
 .top .icons img{
     padding: 2px;
+    cursor: pointer;
 }
 
 .center {

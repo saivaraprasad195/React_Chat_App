@@ -10,11 +10,7 @@ import { auth } from "./lib/firebase";
 import { useChatStore } from "./lib/useChatStore";
 
 const App = () => {
-  const [visiblity, setVisibility] = useState({
-    chatList: true,
-    chat: true,
-    details: false,
-  });
+
   const { currentUser, isLoading, fetchUserInfo } = useUserStore();
   const { chatId } = useChatStore();
 
@@ -37,8 +33,8 @@ const App = () => {
       {currentUser ? (
         <>
           <List />
-          {chatId && visiblity.chat && <Chat setVisibility={setVisibility} />}
-          {visiblity.details && <Detail setVisibility={setVisibility} />}
+          {chatId && <Chat />}
+          { <Detail  />}
         </>
       ) : (
         <Login />
