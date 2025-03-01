@@ -1,0 +1,87 @@
+.chatList{
+    flex: 1;
+    height: 100%;
+    /* display: none; */
+    overflow-y:scroll;
+}
+
+.chatList::-webkit-scrollbar{
+    width: 5px;
+}
+
+.chatList::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatList::-webkit-scrollbar-thumb {
+    background: rgba(17,25,40,0.5);
+    border-radius: 5px;
+}
+
+.chatList .searchContainer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.searchBar{
+    flex: 1;
+    background-color: rgba(17,25,40,0.5);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.searchBar input[type="text"]{
+    padding: 0.75rem;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    flex: 1;
+    background-color: transparent;
+}
+
+.searchBar img{
+    width: 20px;
+    height: 20px; 
+    margin-left: 10px;
+}
+
+.add{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgba(17,25,40,0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.chatList .item{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(158, 156, 156);
+}
+
+.chatList .item > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chatList .item .text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.chatList .item .text span{
+    font-size: 18px;
+    font-weight: 500;
+}
